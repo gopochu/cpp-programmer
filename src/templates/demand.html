@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+    {% block title %}
+    <title>C/C++</title>
+    <link rel="shortcut icon" type="image/png" href="{% static "images/Sign_language_V.svg.png" %}">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Theme CSS -->
+    <link id="theme-style" href="{% static "css/styles.css" %}" rel="stylesheet">
+    {% endblock title %}
+</head>
+
+<body>
+    {% block header %}<!-- ******HEADER****** -->{% endblock header %}
+
+    {% block content%}
+    <div id="hero" class="hero-section">
+        <div id="hero-carousel" class="hero-carousel">
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item item-2 active">
+					<div class="container">
+    					<div class="item-content-inner">
+                            <h2 class="heading">{{ demand_header.last.titleDH }}</h2>
+                            <p class="intro">{{ demand_header.last.demand_header }}</p>
+    					</div><!--//item-content-inner-->
+					</div>
+				</div><!--//item-->
+			</div><!--//carousel-inner-->
+
+		</div><!--//carousel-->
+    </div><!--//hero-->
+
+    <div class="about-section">
+            <h2 class="section-title">{{ all_salary.last.titleAS }}</h2>
+            <img src="{% static "images/all-salary.png"%}" alt="graf" >
+            <p class="intro">{{ all_salary.last.all_salary }}</p>
+    </div><!--//about-section-->
+
+    <div id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">{{ all_vacancy.last.titleAV }}</h2>
+            <div class="img-quote">
+                <img src="{% static "images/all-vacancy.png"%}" alt="image" >
+            </div>
+            <div class="item">
+                <div class="quote-holder">
+                    <blockquote class="quote">
+                        <p> {{ all_vacancy.last.all_vacancy }} </p>
+                    </blockquote>
+                </div><!--//quote-holder-->
+            </div><!--//item-->
+        </div><!--//container-->
+    </div><!--//testimonials-->
+
+
+    <div id="features" class="features-section">
+        <h2 class="section-title">{{ cpp_salary.last.titleCS }}</h2>
+        <p class="intro">{{ cpp_salary.last.cpp_salary }}</p>
+            <div class="img-features">
+                {% for item in image %}
+                <img src=" {{ item.imageCS.url }} " alt="con">
+                {% endfor %}
+            </div>
+    </div><!--//features-->
+
+    <div class="python">
+        <h2 class="python-title">{{ cpp_vacancy.last.titleCV }}</h2>
+        <div class="img-resp1">
+            {% for item in image %}
+                <img src=" {{ item.imageCV.url }} " alt="con">
+                {% endfor %}
+        </div>
+        <p> {{ cpp_vacancy.last.cpp_vacancy }} </p>
+    </div>
+    {% endblock content %}
+
+    {% block contact-section %}{% endblock contact-section %}
+{% block footer %}{% endblock footer %}
+</body>

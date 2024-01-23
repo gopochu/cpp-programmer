@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<head>
+        <title>{% block title %}Default title{% endblock title %}</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a class="scroll-to">
+                    <span class="text"><span class="highlight">VADLAP</span> production</span></a>
+            </h1><!--//logo-->
+            <nav class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                </div><!--//navbar-header-->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav">
+                        <li class="active nav-item"><a class="scroll-to" href="/">Главная</a></li>
+                        <li class="nav-item"><a class="scroll-to" href="demand">Востребованность</a></li>
+                        <li class="nav-item"><a class="scroll-to" href="geography">География</a></li>
+                        <li class="nav-item"><a class="scroll-to" href="skills">Навыки</a></li>
+                        <li class="nav-item"><a class="scroll-to" href="vacancies">Последние вакансии</a></li>
+                        <li class="nav-item"><a class="scroll-to" href="autor">Автор</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+    <div>{% block content%}{% endblock content %}</div>
+    <div class="contact-section">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contact-content">
+            <p>Допилим позже</p>
+        </div>
+    </div><!--//contact-section-->
+
+    <footer class="footer">
+            <small class="copyright">Лаптев Вадим Сергеевич РИ-220911<a href="https://github.com/gopochu" target="_blank"> GitHub</a></small>
+    </footer>
+</body>
