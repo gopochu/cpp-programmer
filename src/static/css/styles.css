@@ -93,7 +93,7 @@ a.btn {
   border-bottom: 4px solid #40babd;
 }
 .header a {
-  color: #fff;
+  color: #40babd;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -123,9 +123,6 @@ a.btn {
   margin-left: 70px;
   font-weight: 800;
 }
-/*.main-nav {*/
-/*  margin-top: 6px;*/
-/*}*/
 .main-nav {
   display: flex;
   align-items: center;
@@ -177,11 +174,11 @@ a.btn {
   color: #fff;
 }
 .main-nav .nav .nav-item a {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgb(59, 152, 161);
   font-weight: 700;
 }
 .main-nav .nav .nav-item a:hover {
-  color: #fff;
+  color: #1a5152;
   background: none;
 }
 .main-nav .nav .nav-item a:focus {
@@ -209,6 +206,9 @@ a.btn {
   color: #EA5395;
 }
 /* ======= Hero Section ======= */
+
+
+
 .hero-section {
   min-height: 560px;
   background: #494d55;
@@ -260,6 +260,13 @@ a.btn {
   -o-background-size: cover;
   background-size: cover;
 }
+.hero-carousel .carousel-inner .item-4 {
+  background-image: url('../images/hero-4.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .hero-carousel .carousel-inner .heading {
   font-size: 30px;
   line-height: 1.4;
@@ -283,6 +290,26 @@ a.btn {
   margin: auto;
   margin-bottom: 30px;
 }
+
+.table1 {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+.table1 th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+.table1 td {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
 .about-section .section-title {
   text-align: center;
   color: #000000;
@@ -380,6 +407,11 @@ a.btn {
   border-right: 10px solid rgba(0, 0, 0, 0.2);
 }
 /* ======= Testimonials Section ======= */
+
+.testimonials-section-margin{
+  margin-bottom: -200px;
+}
+
 .testimonials-section {
   background: #b7d3d3 url('../images/map.png') no-repeat center center;
   -webkit-background-size: cover;
@@ -437,6 +469,26 @@ a.btn {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   position: relative;
+}
+
+.table2 {
+  width: 600px;
+  float: right;
+  margin-right: 70px;
+  margin-left: 90px;
+  margin-bottom: 50px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+.table2 th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+.table2 td {
+  border: 1px solid #dddddd;
+  padding: 5px;
 }
 
 .img-quote > img{
@@ -530,6 +582,9 @@ a.btn {
   margin-top: 0;
   margin-bottom: 100px;
 }
+.python-text{
+  margin-top: 80px;
+}
 
   /* ======= Team Section ======= */
   .cpp-usage {
@@ -609,6 +664,13 @@ a.btn {
   .contact-section {
     display: block;
     margin-top: 200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: #494d55 url('../images/map.png') no-repeat center center;
+    color: #fff;
+  }
+  .contact-section1 {
+    display: block;
     padding-top: 90px;
     padding-bottom: 90px;
     background: #494d55 url('../images/map.png') no-repeat center center;

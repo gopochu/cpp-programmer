@@ -20,16 +20,14 @@ from src import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-info_patterns = [
-    path('contact', views.contact),
-]
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('demand/', views.image_upload_view),
     path('', views.index),
     path('demand', views.demand),
-    path('info/', include(info_patterns)),
+    path('geography', views.geography),
+    path('skills', views.skills),
 ]
 
 if settings.DEBUG:

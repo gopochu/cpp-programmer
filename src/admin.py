@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import History_First, History_Second, Compatibility, Usage, Born, DemandHeader, AllSalary, AllVacancy, CppSalary, CppVacancy, Image
+from .models import History_First, History_Second, Compatibility, Usage, Born, DemandHeader, AllSalary, AllVacancy, CppSalary, CppVacancy, Image, Graphs, CitySalary, VacancyRate, CitySalaryCpp, VacancyRateCpp, GeographyHeader, BestSkills, BestSkillsCpp
 
 admin.site.register(History_First)
 admin.site.register(History_Second)
@@ -12,3 +12,11 @@ admin.site.register(AllVacancy)
 admin.site.register(CppSalary)
 admin.site.register(CppVacancy)
 admin.site.register(Image)
+admin.site.register(Graphs)
+admin.site.register(CitySalary)
+admin.site.register(VacancyRate)
+admin.site.register(CitySalaryCpp)
+admin.site.register(VacancyRateCpp)
+admin.site.register(GeographyHeader)
+admin.site.register(BestSkills)
+admin.site.register(BestSkillsCpp)

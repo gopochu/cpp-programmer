@@ -23,11 +23,11 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 
-				<div class="item item-2 active">
+				<div class="item item-3 active">
 					<div class="container">
     					<div class="item-content-inner">
-                            <h2 class="heading">{{ demand_header.last.titleDH }}</h2>
-                            <p class="intro">{{ demand_header.last.demand_header }}</p>
+                            <h2 class="heading">{{ geography_header.last.title }}</h2>
+                            <p class="intro">{{ geography_header.last.text }}</p>
     					</div><!--//item-content-inner-->
 					</div>
 				</div><!--//item-->
@@ -37,25 +37,26 @@
     </div><!--//hero-->
 
     <div class="about-section">
-            <h2 class="section-title">{{ all_salary.last.titleAS }}</h2>
-            {% for item in image %}
-            <img src="{{ item.imageAS.url }}" alt="graf" >
+            <h2 class="section-title">{{ city_salary.last.title }}</h2>
+            {% for item in graphs %}
+            <img src="{{ item.graphsCS.url }}" alt="graf" >
             {% endfor %}
-            <p class="intro">{{ all_salary.last.all_salary }}</p>
+            <p class="intro">{{ city_salary.last.text }}</p>
     </div><!--//about-section-->
 
     <div id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">{{ all_vacancy.last.titleAV }}</h2>
+            <h2 class="section-title">{{ vacancy_rate.last.title }}</h2>
             <div class="img-quote">
-                {% for item in image %}
-                <img src="{{ item.imageAV.url }}" alt="graf" >
+                {% for item in graphs %}
+                <img src="{{ item.graphsVR.url }}" alt="graf" >
                 {% endfor %}
             </div>
             <div class="item">
                 <div class="quote-holder">
                     <blockquote class="quote">
-                        <p> {{ all_vacancy.last.all_vacancy }} </p>
+                        <p> {{ vacancy_rate.last.text }} </p>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
                     </blockquote>
                 </div><!--//quote-holder-->
             </div><!--//item-->
@@ -64,24 +65,24 @@
 
 
     <div id="features" class="features-section">
-        <h2 class="section-title">{{ cpp_salary.last.titleCS }}</h2>
-        <p class="intro">{{ cpp_salary.last.cpp_salary }}</p>
+        <h2 class="section-title">{{ city_salary_cpp.last.title }}</h2>
+        <p class="intro">{{ city_salary_cpp.last.text }}</p>
             <div class="img-features">
-                {% for item in image %}
-                <img src=" {{ item.imageCS.url }} " alt="con">
+                {% for item in graphs %}
+                <img src=" {{ item.graphsCSC.url }} " alt="con">
                 {% endfor %}
             </div>
     </div><!--//features-->
 
     <div class="python">
-        <h2 class="python-title">{{ cpp_vacancy.last.titleCV }}</h2>
+        <h2 class="python-title">{{ vacancy_rate_cpp.last.title }}</h2>
         <div class="img-resp1">
-            {% for item in image %}
-                <img src=" {{ item.imageCV.url }} " alt="con">
+            {% for item in graphs %}
+                <img src=" {{ item.graphsVRC.url }} " alt="con">
                 {% endfor %}
         </div>
         <div class="python-text">
-            <p> {{ cpp_vacancy.last.cpp_vacancy }} </p>
+            <p> {{ vacancy_rate_cpp.last.text }} </p>
         </div>
     </div>
     {% endblock content %}

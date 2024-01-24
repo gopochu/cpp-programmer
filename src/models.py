@@ -57,3 +57,41 @@ class Image(models.Model):
         return self.title
 
 #<--//images -->
+
+class GeographyHeader(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+
+class CitySalary(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+
+class VacancyRate(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+
+class CitySalaryCpp(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+
+class VacancyRateCpp(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+
+
+class Graphs(models.Model):
+    graphsCS = models.ImageField(blank=True, upload_to='images')
+    graphsVR = models.ImageField(blank=True, upload_to='images')
+    graphsCSC = models.ImageField(blank=True, upload_to='images')
+    graphsVRC = models.ImageField(blank=True, upload_to='images')
+
+class BestSkills(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+    table = models.CharField(max_length=15000)
+
+
+class BestSkillsCpp(models.Model):
+    title = models.CharField(max_length=400)
+    text = models.CharField(max_length=4000)
+    table = models.TextField(max_length=15000)
